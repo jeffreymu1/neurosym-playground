@@ -3,3 +3,4 @@
 .env
 /datasets_and_pipeline
 /data
+/checkpoints

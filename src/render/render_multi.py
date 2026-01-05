@@ -11,7 +11,7 @@ $proj = "C:\Users\jmu5\OneDrive - Brown University\Documents\temp school stuff\n
 & $blender42 -b -P "$proj\src\render\render_multi.py" -- `
   --in_dir "$proj\data\partnet_datasets\725" `
   --out_dir "$proj\data\output\725" `
-  --views 50 --res 512 --engine CYCLES --radius 2.2 --elev 15 --save_previews 1
+  --views 24 --res 512 --engine CYCLES --radius 2.2 --elev 15 --save_previews 1
 """
 
 # arguments
