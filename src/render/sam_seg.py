@@ -11,7 +11,7 @@ python sam_seg.py `
   --rgb_dir  "..\..\data\output\725\rgb" `
   --out_dir  "..\..\data\output\725sam" `
   --sam_ckpt "..\..\checkpoints\sam_vit_h_4b8939.pth" `
-  --points_per_side 16 --device cpu --topk 10 --rank "quality_area"
+  --points_per_side 16 --device cpu --topk 15 --rank "quality_area"
 
 '''
 
