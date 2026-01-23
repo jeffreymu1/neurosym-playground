@@ -1,0 +1,158 @@
+[
+  {
+    "mask_id": 0,
+    "area": 210891,
+    "bbox": [
+      0,
+      0,
+      511,
+      511
+    ],
+    "predicted_iou": 1.0280890464782715,
+    "stability_score": 0.995932400226593,
+    "mask_path": "view_009/masks/mask_000.png"
+  },
+  {
+    "mask_id": 1,
+    "area": 48079,
+    "bbox": [
+      112,
+      80,
+      268,
+      384
+    ],
+    "predicted_iou": 0.9848276376724243,
+    "stability_score": 0.9701746702194214,
+    "mask_path": "view_009/masks/mask_001.png"
+  },
+  {
+    "mask_id": 2,
+    "area": 14014,
+    "bbox": [
+      233,
+      85,
+      42,
+      379
+    ],
+    "predicted_iou": 0.9810714721679688,
+    "stability_score": 0.9869595766067505,
+    "mask_path": "view_009/masks/mask_002.png"
+  },
+  {
+    "mask_id": 3,
+    "area": 12023,
+    "bbox": [
+      130,
+      85,
+      103,
+      128
+    ],
+    "predicted_iou": 0.9921872019767761,
+    "stability_score": 0.9836606979370117,
+    "mask_path": "view_009/masks/mask_003.png"
+  },
+  {
+    "mask_id": 4,
+    "area": 9679,
+    "bbox": [
+      151,
+      212,
+      223,
+      77
+    ],
+    "predicted_iou": 0.9488941431045532,
+    "stability_score": 0.975739061832428,
+    "mask_path": "view_009/masks/mask_004.png"
+  },
+  {
+    "mask_id": 5,
+    "area": 8039,
+    "bbox": [
+      233,
+      85,
+      42,
+      203
+    ],
+    "predicted_iou": 0.9496911764144897,
+    "stability_score": 0.9709416627883911,
+    "mask_path": "view_009/masks/mask_005.png"
+  },
+  {
+    "mask_id": 6,
+    "area": 5650,
+    "bbox": [
+      236,
+      288,
+      35,
+      176
+    ],
+    "predicted_iou": 1.0034829378128052,
+    "stability_score": 0.9867934584617615,
+    "mask_path": "view_009/masks/mask_006.png"
+  },
+  {
+    "mask_id": 7,
+    "area": 4279,
+    "bbox": [
+      121,
+      254,
+      35,
+      149
+    ],
+    "predicted_iou": 0.996656596660614,
+    "stability_score": 0.9932432174682617,
+    "mask_path": "view_009/masks/mask_007.png"
+  },
+  {
+    "mask_id": 8,
+    "area": 3795,
+    "bbox": [
+      349,
+      251,
+      32,
+      154
+    ],
+    "predicted_iou": 0.9951751828193665,
+    "stability_score": 0.9916010499000549,
+    "mask_path": "view_009/masks/mask_008.png"
+  },
+  {
+    "mask_id": 9,
+    "area": 1046,
+    "bbox": [
+      152,
+      246,
+      80,
+      34
+    ],
+    "predicted_iou": 0.908846378326416,
+    "stability_score": 0.9569288492202759,
+    "mask_path": "view_009/masks/mask_009.png"
+  },
+  {
+    "mask_id": 10,
+    "area": 514,
+    "bbox": [
+      155,
+      201,
+      46,
+      19
+    ],
+    "predicted_iou": 0.9919593334197998,
+    "stability_score": 0.9922330379486084,
+    "mask_path": "view_009/masks/mask_010.png"
+  },
+  {
+    "mask_id": 11,
+    "area": 157,
+    "bbox": [
+      251,
+      268,
+      21,
+      24
+    ],
+    "predicted_iou": 0.9441868662834167,
+    "stability_score": 0.993630588054657,
+    "mask_path": "view_009/masks/mask_011.png"
+  }
+]

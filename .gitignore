@@ -2,6 +2,6 @@
 .ipynb_checkpoints/
 .env
 /datasets_and_pipeline
-/data
+/data/partnet_datasets
 /checkpoints
 /external

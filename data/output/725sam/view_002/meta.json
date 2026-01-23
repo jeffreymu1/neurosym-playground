@@ -1,0 +1,132 @@
+[
+  {
+    "mask_id": 0,
+    "area": 214986,
+    "bbox": [
+      0,
+      0,
+      511,
+      511
+    ],
+    "predicted_iou": 1.0316585302352905,
+    "stability_score": 0.9952239394187927,
+    "mask_path": "view_002/masks/mask_000.png"
+  },
+  {
+    "mask_id": 1,
+    "area": 43896,
+    "bbox": [
+      132,
+      81,
+      258,
+      378
+    ],
+    "predicted_iou": 0.9416121244430542,
+    "stability_score": 0.9641415476799011,
+    "mask_path": "view_002/masks/mask_001.png"
+  },
+  {
+    "mask_id": 2,
+    "area": 16105,
+    "bbox": [
+      132,
+      206,
+      226,
+      211
+    ],
+    "predicted_iou": 0.9575433731079102,
+    "stability_score": 0.9561494588851929,
+    "mask_path": "view_002/masks/mask_002.png"
+  },
+  {
+    "mask_id": 3,
+    "area": 8411,
+    "bbox": [
+      276,
+      83,
+      43,
+      209
+    ],
+    "predicted_iou": 0.8974395394325256,
+    "stability_score": 0.9570645093917847,
+    "mask_path": "view_002/masks/mask_003.png"
+  },
+  {
+    "mask_id": 4,
+    "area": 6689,
+    "bbox": [
+      317,
+      85,
+      60,
+      125
+    ],
+    "predicted_iou": 1.0070403814315796,
+    "stability_score": 0.979712724685669,
+    "mask_path": "view_002/masks/mask_004.png"
+  },
+  {
+    "mask_id": 5,
+    "area": 5721,
+    "bbox": [
+      278,
+      288,
+      35,
+      172
+    ],
+    "predicted_iou": 0.9943743348121643,
+    "stability_score": 0.9965096116065979,
+    "mask_path": "view_002/masks/mask_005.png"
+  },
+  {
+    "mask_id": 6,
+    "area": 5000,
+    "bbox": [
+      132,
+      255,
+      37,
+      163
+    ],
+    "predicted_iou": 0.9772703647613525,
+    "stability_score": 0.9811694622039795,
+    "mask_path": "view_002/masks/mask_006.png"
+  },
+  {
+    "mask_id": 7,
+    "area": 1818,
+    "bbox": [
+      228,
+      281,
+      23,
+      78
+    ],
+    "predicted_iou": 1.0029855966567993,
+    "stability_score": 0.9928689002990723,
+    "mask_path": "view_002/masks/mask_007.png"
+  },
+  {
+    "mask_id": 8,
+    "area": 1805,
+    "bbox": [
+      316,
+      214,
+      42,
+      55
+    ],
+    "predicted_iou": 0.9037655591964722,
+    "stability_score": 0.9757975935935974,
+    "mask_path": "view_002/masks/mask_008.png"
+  },
+  {
+    "mask_id": 9,
+    "area": 267,
+    "bbox": [
+      322,
+      201,
+      29,
+      15
+    ],
+    "predicted_iou": 0.9755507707595825,
+    "stability_score": 0.9887640476226807,
+    "mask_path": "view_002/masks/mask_009.png"
+  }
+]
