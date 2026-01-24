@@ -1,0 +1,12 @@
+Part_0 = Part(0.86,0.83,0.28,-0.0,0.3,-0.33) # back single surface
+Part_1 = Part(0.07,0.1,0.72,-0.39,-0.5,0.18) # bar stretcher
+Part_2 = Part(0.75,0.05,0.07,-0.01,-0.51,0.14) # bar stretcher
+Part_3 = Part(0.08,0.1,0.72,0.38,-0.5,0.18) # bar stretcher
+Part_4 = Part(0.06,0.55,0.12,-0.4,-0.42,-0.23) # leg
+Part_5 = Part(0.09,0.56,0.12,-0.38,-0.42,0.57) # leg
+Part_6 = Part(0.09,0.56,0.09,0.38,-0.42,0.58) # leg
+Part_7 = Part(0.06,0.56,0.12,0.39,-0.42,-0.22) # leg
+Part_8 = Part(0.85,0.19,0.92,-0.0,-0.08,0.17) # seat single surface
+parts_in_shape = [
+    Part_0, Part_1, Part_2, Part_3, Part_4, Part_5, Part_6, Part_7, Part_8
+]

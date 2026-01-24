@@ -1,0 +1,172 @@
+def four_leg_base(
+    CF: CoordFrame,
+    leg_size: float,
+    stretcher_orientation: str = 'none',
+    stretcher_size: float = 0.0,
+    stretcher_offset: float = 0.0
+) -> List[Part]:
+    """
+    Description: Creates a base structure for chair objects with four vertical legs positioned at the corners of the bounding volume, each having a square cross-section. Stretchers can be added between pairs of legs either horizontally between front/back legs or laterally between left/right legs. Both pairs of stretchers can also be added. Stretchers do not touch the bottom or the top of the bounding volume.
+
+    Parts: When stretcher_orientation is 'none' returns a list with 4 Part objects. When stretcher_orientation is 'horizontal' or 'lateral' returns a list with 6 Part objects. When stretcher_orientation is 'both' returns a list with 8 Part objects. Valid options: [4, 6, 8]
+
+    Parameters:
+    - CF: controls the dimensions and position of the structure
+    - leg_size: controls the cross-sectional size (width and depth) of each leg part
+    - stretcher_orientation: specifies the orientation of stretchers to be added. Valid options: ('none', 'horizontal', 'lateral', 'both'). Default is 'none'
+    - stretcher_size: controls the cross-sectional size (width and depth) of each stretcher part
+    - stretcher_offset: controls the vertical position of the stretchers as an offset from the center of the bounding volume
+    """
+
+
+def sled_base(
+    CF: CoordFrame,
+    leg_size: float,
+    runner_height: float
+) -> List[Part]:
+    """
+    Description: Creates a base for chair objects consisting of four vertical legs positioned at the corners of the bounding volume and two lateral sled runners at ground level. The sled runners connect pairs of legs (front and back on each side). The vertical legs extend from the runners up to the seat, with their height determined by the bounding volume's height.
+
+    Parts: Always returns a list with 6 Part objects: 4 legs and 2 sled runners. Valid options: [6]
+
+    Parameters:
+    - CF: controls the dimensions and position of the structure
+    - leg_size: controls the cross-sectional size (width and depth) of the vertical leg parts
+    - runner_height: controls the height of the sled runner parts
+    """
+
+
+def seat_with_frame_or_cushion(
+    CF: CoordFrame,
+    seat_surface_thickness: float,
+    frame_thickness: float,
+    frame_style: str,
+    cushion_thickness: float = 0.0
+) -> List[Part]:
+    """
+    Description: Creates a seat for chair objects that includes a seat surface and optionally an underneath frame for support and/or a cushion on top. If a frame is added, it uses bars of uniform cross-sectional thickness positioned underneath the seat along its perimeter, either as two side bars or as a full perimeter of four bars. If a cushion is added, it sits directly on top of the seat surface with its thickness controlled independently. At least one of frame or cushion must be included.
+
+    Parts: 
+    - When frame_style is 'none' and cushion_thickness > 0.0, returns a list with 2 Part objects.
+    - When frame_style is 'side' and cushion_thickness is 0.0, returns a list with 3 Part objects.
+    - When frame_style is 'side' and cushion_thickness > 0.0, returns a list with 4 Part objects.
+    - When frame_style is 'full' and cushion_thickness is 0.0, returns a list with 5 Part objects.
+    - When frame_style is 'full' and cushion_thickness > 0.0, returns a list with 6 Part objects.
+    Valid options: [2, 3, 4, 5, 6]
+
+    Parameters:
+    - CF: Controls the dimensions and position of the structure.
+    - seat_surface_thickness: Controls the thickness of the seat surface part.
+    - frame_thickness: Controls the cross-sectional thickness of the optional frame bars.
+    - frame_style: Specifies the style of the frame. Valid options: ('none', 'side', 'full').
+    - cushion_thickness: Optionally controls the thickness of the cushion part. Default is 0.0.
+    """
+
+
+def chair_armrest(
+    CF: CoordFrame,
+    lateral_bar_width: float,
+    support_type: str = 'none',
+    support_size: float = 0.0,
+    support_height: float = 0.0
+) -> List[Part]:
+    """
+    Description: Creates two symmetrical chair armrest units. Each unit includes a lateral bar that extends along the depth dimension. The lateral bar can either span the entire height of the bounding volume or be supported underneath by one or two vertical supporting bars. In all cases, the top of the lateral bar aligns with the top of the bounding volume, and the sum of the heights of the vertical and lateral bars spans the entire bounding volume height. If there is one support bar, it is positioned at the front of the structure. If there are two supporting bars, they are positioned at both the front and back of the structure.
+
+    Parts: When support_type is 'none' returns a list with 2 Part objects. When support_type is 'single' returns a list with 4 Part objects. When support_type is 'double' returns a list with 6 Part objects. Valid options: [2, 4, 6]
+
+    Parameters:
+    - CF: controls the dimensions and position of the structure
+    - lateral_bar_width: controls the width of each lateral bar
+    - support_type: specifies the type of support. Valid options: ('none', 'single', 'double'). Default is 'none'
+    - support_size: controls the cross-sectional size (width and depth) of the support bars
+    - support_height: controls the height of the support bars
+    """
+
+
+def panel_chair_back_with_frame(
+    CF: CoordFrame,
+    frame_thickness: float,
+    panel_thickness: float,
+    panel_height: float,
+    panel_offset: float,
+    frame_layout: str
+) -> List[Part]:
+    """
+    Description: Creates a chair backrest with a frame structure consisting of two vertical side frames and an optional horizontal frame. A central backrest panel connects the two side frames, positioned at a specified vertical offset from the center of the bounding volume.
+
+    Parts: 
+    - When frame_layout is 'sides_only', returns a list with 3 Part objects (two vertical side frames and one backrest panel).
+    - When frame_layout is 'top' or 'bottom', returns a list with 4 Part objects (two vertical side frames, one horizontal frame, and one backrest panel).
+    - When frame_layout is 'top_bottom', returns a list with 5 Part objects (two vertical side frames, two horizontal frames, and one backrest panel).
+    Valid options: [3, 4, 5]
+
+    Parameters:
+    - CF: controls the dimensions and position of the backrest structure
+    - frame_thickness: controls the cross-sectional thickness of the frame bars
+    - panel_thickness: controls the thickness of the central backrest panel
+    - panel_height: controls the height of the central backrest panel
+    - panel_offset: controls the vertical position of the backrest panel as an offset from the center of the bounding volume
+    - frame_layout: specifies the layout of the frames. Valid options: ('sides_only', 'top', 'bottom', 'top_bottom')
+    """
+
+
+def ladder_chair_back(
+    CF: CoordFrame,
+    frame_thickness: float,
+    bar_thickness: float,
+    bar_count: int,
+    spacing: float,
+    frame_style: str
+) -> List[Part]:
+    """
+    Description: Creates a backrest for chair objects consisting of multiple evenly spaced parallel bars supported by framing bars, based on the specified frame style. Depending on the frame style, the orientation and number of framing bars vary to support the ladder structure.
+
+    Parts: When frame_style is 'top_only' returns a list with (bar_count + 1) Part objects. When frame_style is 'top_bottom' or 'left_right', returns a list with (bar_count + 2) Part objects. Valid options: [3, 4, 5, 6, 7, 8]
+
+    Parameters:
+    - CF: controls the dimensions and position of the backrest structure
+    - frame_thickness: controls the cross-sectional thickness of the frame parts
+    - bar_thickness: controls the cross-sectional thickness of the parallel bars
+    - bar_count: specifies the number of parallel bars in the ladder; minimum is 2 and maximum is 6
+    - spacing: controls the spacing between the parallel bars
+    - frame_style: specifies the frame support style. Valid options: ('top_only', 'top_bottom', 'left_right')
+    """
+
+
+def pedestal_base(
+    CF: CoordFrame,
+    column_height: float,
+    column_size: float
+) -> List[Part]:
+    """
+    Description: Creates a base for chair objects consisting of a pedestal support and a central column. The pedestal support spans the entire width and depth of the bounding volume and touches the ground. The central column, with a square cross-section, is centered on top of the pedestal support. Combined, their heights span the entire height of the bounding volume.
+
+    Parts: Always returns a list with 2 Part objects. Valid options: [2]
+
+    Parameters:
+    - CF: controls the dimensions and position of the structure
+    - column_height: controls the height of the central column part
+    - column_size: controls the cross-sectional size (width and depth) of the central column part
+    """
+
+
+def cantilever_base(
+    CF: CoordFrame,
+    vertical_leg_size: float,
+    runner_height: float,
+    rear_stretcher_size: float = 0.0
+) -> List[Part]:
+    """
+    Description: Creates a cantilever base for chair objects consisting of two vertical front legs and two lateral runners positioned on the ground. The runners extend backward from the front legs to provide stability. Optionally, a horizontal rear stretcher can be added to connect the two lateral runners at the back for additional support. The vertical legs have a square cross-section, while the runners have a width matching the vertical legs.
+
+    Parts: When rear_stretcher_size is 0.0, returns a list with 4 Part objects (2 vertical legs and 2 runners). When rear_stretcher_size is greater than 0.0, returns a list with 5 Part objects (2 vertical legs, 2 runners, and 1 rear stretcher). Valid options: [4, 5]
+
+    Parameters:
+    - CF: controls the dimensions and position of the structure
+    - vertical_leg_size: controls the cross-sectional size (width and depth) of the vertical front legs
+    - runner_height: controls the height of the ground runners
+    - rear_stretcher_size: optionally controls the cross-sectional size (width and depth) of the horizontal rear stretcher, included only if greater than 0.0
+    """
+
+

@@ -1,0 +1,10 @@
+Part_0 = Part(0.3,0.71,0.72,-0.48,0.31,0.08) # arm sofa style
+Part_1 = Part(0.26,0.69,0.64,0.5,0.31,0.08) # arm sofa style
+Part_2 = Part(1.08,0.8,0.46,0.01,0.3,-0.31) # back single surface
+Part_3 = Part(0.17,0.45,0.13,-0.02,-0.43,0.15) # central support
+Part_4 = Part(1.0,0.18,1.0,-0.0,-0.71,0.15) # pedestal
+Part_5 = Part(0.8,0.24,0.85,0.02,0.02,0.09) # seat single surface
+Part_6 = Part(1.05,0.35,0.88,0.01,-0.08,0.08) # seat support
+parts_in_shape = [
+    Part_0, Part_1, Part_2, Part_3, Part_4, Part_5, Part_6
+]

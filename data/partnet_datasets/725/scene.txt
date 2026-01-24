@@ -1,0 +1,12 @@
+Part_0 = Part(0.08,0.73,0.12,-0.36,0.26,-0.25) # back frame vertical bar
+Part_1 = Part(0.09,0.74,0.12,0.36,0.26,-0.25) # back frame vertical bar
+Part_2 = Part(0.69,0.45,0.07,0.0,0.39,-0.26) # back single surface
+Part_3 = Part(0.06,0.71,0.11,-0.37,-0.44,-0.26) # leg
+Part_4 = Part(0.06,0.7,0.1,-0.37,-0.45,0.44) # leg
+Part_5 = Part(0.06,0.7,0.11,0.37,-0.45,-0.26) # leg
+Part_6 = Part(0.06,0.71,0.12,0.38,-0.44,0.43) # leg
+Part_7 = Part(0.74,0.07,0.63,0.01,-0.02,0.09) # seat single surface
+Part_8 = Part(0.8,0.09,0.65,0.0,-0.07,0.11) # seat support
+parts_in_shape = [
+    Part_0, Part_1, Part_2, Part_3, Part_4, Part_5, Part_6, Part_7, Part_8
+]
