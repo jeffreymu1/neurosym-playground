@@ -5,12 +5,12 @@ from mathutils import Vector
 r"""
 CLI:
 
-$blender42 = "C:\Users\jmu5\Downloads\blender-4.2.16-windows-x64\blender-4.2.16-windows-x64\blender.exe"
-$proj = "C:\Users\jmu5\OneDrive - Brown University\Documents\temp school stuff\neurosym-playground"
+blender42="/Applications/Blender.app/Contents/MacOS/Blender"
+proj="/Users/jmu/Desktop/college/BVC/neurosym-playground"
 
-& $blender42 -b -P "$proj\src\render\render_multi.py" -- `
-  --in_dir "$proj\data\partnet_datasets\725" `
-  --out_dir "$proj\data\output\725" `
+"$blender42" -b -P "$proj/src/render/render_multi.py" -- \
+  --in_dir "$proj/data/partnet_datasets/2296" \
+  --out_dir "$proj/data/output/2296" \
   --views 24 --res 512 --engine CYCLES --radius 2.2 --elev 15 --save_previews 1
 """
 
